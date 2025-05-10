@@ -21,7 +21,7 @@
 # -> to execute and solve a problem, as a function of the input size
     
 
-n = 5  # You can change the value of n to control the size of the pattern
+n = 5 
 
 for i in range(1, n + 1):
     for j in range(1, n + 1):
@@ -30,3 +30,64 @@ for i in range(1, n + 1):
         else:
             print("*", end=" ")
     print()
+    
+    
+# The time complexity of the provided nested loop code is O(n²), which is read as "Big O of n squared".
+
+# Here's why:
+
+# Outer loop: The outer for loop iterates n times (from 1 to n inclusive).
+# Inner loop: For each iteration of the outer loop, the inner for loop also iterates n times (from 1 to n inclusive).
+# Operations inside the inner loop: Inside the inner loop, there's a conditional check (if i == j) and a print() statement. These operations take constant time, which we denote as O(1).
+# Since the inner loop runs n times for each of the n iterations of the outer loop, the total number of times the operations inside the inner loop are executed is proportional to n×n=n 
+# 2
+#  .
+
+# Therefore, the dominant factor determining the execution time of this code as the input size n grows is n 
+
+# 2 .This makes its time complexity quadratic, or O(n²).
+
+# In simpler terms, if you double the value of n, the execution time of this code will roughly quadruple.
+
+# import numpy as np
+
+# a = np.array([1, 2, 3, 5])
+# i = 0
+
+# for _ in range(100):
+#     if i >= len(a): # time complixety jut for this is o(1)
+#         break
+    
+#     if a[i] >= 5:
+#      a = np.append(a,a[-1] + 1 )
+     
+    
+#     if 50 in a:
+#         break
+#     i += 1
+
+# print(a)    
+
+
+
+
+
+# last numbers
+
+ 
+# n = 5785
+# num  = n
+
+# while num >0:
+#     last_digit = num %10
+#     num = num // 10
+#     print(last_digit)
+    
+    
+
+N1 = 55787
+NUm01 = N1
+while NUm01  >0:
+    last_numbers=NUm01  % 10     
+    NUm01  = NUm01 // 10
+    print(last_numbers)
