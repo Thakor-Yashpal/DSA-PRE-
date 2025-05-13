@@ -34,15 +34,25 @@ while NUm01 > 0:
  
 
 
+
 # Example 03
 
-N1 = 23481  # Initial number
-count = 0   # Counter to track the number of digits
-NUm02 = N1  # Copy of N1 to manipulate
+N1 = 23481       # Initial number
+count = 0        # Counter to track the number of digits
+NUm02 = N1       # Copy of N1 to manipulate
 
-# Loop to count digits and extract last digit in each iteration
+# Loop to count digits and extract the last digit in each iteration
 while NUm02 > 0:
     count += 1
-    last_digit = NUm02 % 10  # Get the last digit
-    NUm02 = NUm02 // 10      # Remove the last digit
+    last_digit = NUm02 % 10     # Get the last digit
+    NUm02 = NUm02 // 10         # Remove the last digit
     print("Count value:", count, "Last digit:", last_digit)
+
+# -----------------------------------------
+# Time Complexity: O(d)
+# - 'd' is the number of digits in the number N1
+# - Each iteration processes one digit
+
+# Space Complexity: O(1)
+# - Uses only a fixed number of variables regardless of input size
+# -----------------------------------------
