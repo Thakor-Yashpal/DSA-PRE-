@@ -69,9 +69,9 @@ while node2 > 0:
     node2 -= 1
 
 if total2 == N2:
-    print("This is an Armstrong Number")
+    print("This is an Armstrong Number",total2)
 else:
-    print("This is not an Armstrong Number")
+    print("This is not an Armstrong Number", node2)
 
 
 # Time Complexity: O(d)
@@ -81,3 +81,13 @@ else:
 # Space Complexity: O(1)
 # - Only a fixed number of variables are used regardless of input size
 # -----------------------------------------
+class Solution(object):
+    def mergeAlternately(self, word1, word2):
+        self.word1 = "abc"
+        self.word2 = "pqr"
+        range = len(word1)
+        range1 = len(word2)
+        if word1 >= word2:
+                print(word1)
+        else:
+                print(word2)
