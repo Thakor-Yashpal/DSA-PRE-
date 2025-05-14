@@ -68,26 +68,3 @@ for i in range(1, n + 1):
 
 # print(a)    
 
-
-
-
-
-# last numbers
-
- 
-# n = 5785
-# num  = n
-
-# while num >0:
-#     last_digit = num %10
-#     num = num // 10
-#     print(last_digit)
-    
-    
-
-N1 = 55787
-NUm01 = N1
-while NUm01  >0:
-    last_numbers=NUm01  % 10     
-    NUm01  = NUm01 // 10
-    print(last_numbers)
