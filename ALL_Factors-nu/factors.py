@@ -82,3 +82,20 @@ Example 03: Optimized Divisor Collection (Partial Iteration)
 - Space Complexity: O(k), where k is the number of divisors
 
 '''
+
+# example -04 optimal solution
+from math import sqrt
+
+number = 25
+
+output = 0
+
+for i in range(1,int(sqrt(number))+1):
+    if number % i == 0:
+        result.append(i)
+    if number // i != i:
+        result.append(number // i)
+    result.sort()
+print(result)
+
+    
