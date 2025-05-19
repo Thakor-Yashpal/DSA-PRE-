@@ -83,19 +83,36 @@ Example 03: Optimized Divisor Collection (Partial Iteration)
 
 '''
 
+
 # example -04 optimal solution
 from math import sqrt
+number = 25  # Input number
+result = []  # List to store the divisors
 
-number = 25
-
-output = 0
-
-for i in range(1,int(sqrt(number))+1):
+# Loop from 1 to the integer square root of the number
+for i in range(1, int(sqrt(number)) + 1):
+    # Check if 'i' divides 'number'
     if number % i == 0:
-        result.append(i)
-    if number // i != i:
-        result.append(number // i)
-    result.sort()
+        result.append(i)  # Add the divisor
+        # Add the paired divisor if it's not the square root (to avoid duplication)
+        if number // i != i:
+            result.append(number // i)
+
+# Sort the divisors in ascending order
+result.sort()
+
+# Output the final sorted list of divisors
 print(result)
 
-    
+"""
+Find all divisors of a given number using optimized iteration up to sqrt(n).
+
+Time Complexity:
+    - The loop runs up to √n → O(√n)
+    - Appending is O(1) per operation
+    - Sorting the result list of up to 2√n elements → O(√n log √n)
+    - Overall: O(√n log n)
+
+Space Complexity:
+    - At most 2√n divisors are stored in the list → O(√n)
+"""
