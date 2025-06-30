@@ -68,3 +68,34 @@ for i in range(1, n + 1):
 
 # print(a)    
 
+
+
+# For example, for n = 5, the output should be:
+# * * * * 0 
+# * * * 0 * 
+# * * 0 * * 
+# * 0 * * * 
+# 0 * * * * 
+L =  5
+
+for i in range(1, L + 1):
+  for j in range(1 , L + 1):
+    if i + j == L + 1:
+      print(0, end = " ")
+    else:
+      print("*", end = " ")
+  print()
+  
+  
+# we have a string and how you have to finda a seem element
+s = "abcaadefrqrqeqrqasasaeafaff"
+char_count = {}
+for char in s:
+    char_count[char] = char_count.get(char, 0) + 1
+
+for char, count in char_count.items():
+    if count > 1:
+        print(f"Character '{char}' appears {count} times.")
+        
+        
+        
