@@ -13,3 +13,23 @@ class Solution(object):
 
 sol = Solution()
 print(sol.mergeAlternately("abc", "pqr")) 
+
+
+
+# redoing the code
+
+class another_soluction(object):
+    def one_more (slef,word01,word02):
+        result = []
+        i,j = 0,0
+        
+        for i in range((len(word01) + len(word02))):
+            if i <len(word01):
+                result.append(word01[i])
+            if j < len(word02):
+                result.append(word02[j])
+                j += 1
+        return ''.join(result)
+
+sol = another_soluction()
+print(sol.one_more("abc", "pqr"))

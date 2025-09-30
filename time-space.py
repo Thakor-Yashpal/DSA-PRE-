@@ -86,8 +86,12 @@ for i in range(1, L + 1):
       print("*", end = " ")
   print()
   
-  
-# we have a string and how you have to finda a seem element
+# -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Added a script that iterates over a string and counts the frequency of each character.
+# It then prints characters that appear more than once, showing how many times they appear.
+# Useful for simple text analysis or debugging repeated characters.
+
 s = "abcaadefrqrqeqrqasasaeafaff"
 char_count = {}
 for char in s:
@@ -97,5 +101,4 @@ for char, count in char_count.items():
     if count > 1:
         print(f"Character '{char}' appears {count} times.")
         
-        
-        
+    
