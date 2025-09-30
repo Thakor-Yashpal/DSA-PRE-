@@ -6,36 +6,19 @@ A hands-on collection of Python scripts and problems for **Data Structures & Alg
 
 ## 📂 Project Structure & Topics
 
-This repo is organized into modules & scripts covering a wide variety of DSA & algorithmic themes. You can pick and choose topics to practice or extend.
+The repository contains multiple Python scripts and folders covering different DSA topics:
 
-### Directories / Scripts
-
-- **1D-Array/**  
-  Problems and solutions based on one-dimensional arrays: traversals, subarrays, prefix sums, two pointers, sliding window, etc.
-
-- **ALL_Factors-nu/**  
-  Number theory problems: finding factors, prime factorization, divisibility, etc.
-
-- **Extracyion_of_Digits/**  
-  Digit manipulation and extraction: sum of digits, reverse digits, digit frequency, palindrome check, etc.
-
-- **Frequency-dict.py**  
-  Counting / frequency problems using dictionaries or maps: mode, frequency count, anagrams, etc.
-
-- **Hashing-py**  
-  Hashing / hash table / map-based problems: collision handling, hash sets, frequency maps, etc.
-
-- **time-space.py**  
-  Scripts and commentary about analyzing **time complexity** and **space complexity** of algorithms; sample problems annotated with complexity.
-
-- **geranl.py**  
-  General utility scripts, helper functions, or miscellaneous practice problems.
+- **1D-Array/** → Problems and solutions related to arrays.
+- **ALL_Factors-nu/** → Programs to calculate factors of numbers.
+- **Extracyion_of_Digits/** → Scripts to extract digits and perform digit-based operations.
+- **Frequency-dict.py** → Program to count frequency of elements using dictionaries.
+- **Hashing-py** → Hashing-related problems and practice.
+- **time-space.py** → Scripts for analyzing time and space complexity.
+- **geranl.py** → General utility or practice problems.
 
 ---
 
 ## 🎯 Topics Covered / To Add
-
-Here are topics already covered (or partially) and suggestions for expansion:
 
 | Topic | Description / Examples | Status |
 |---|---|---|
@@ -56,8 +39,6 @@ Here are topics already covered (or partially) and suggestions for expansion:
 | Heaps & Priority Queues | Top K problems, median maintenance, merging streams | ⬜ |
 | Advanced Topics | Segment tree, Fenwick tree, suffix array, tries | ⬜ |
 
-You can gradually fill in the empty ones (“⬜”) as you expand this repo.
-
 ---
 
 ## 🛠 Installation & Getting Started
@@ -67,3 +48,4 @@ Clone & set up:
 ```bash
 git clone https://github.com/Thakor-Yashpal/DSA-PRE-.git
 cd DSA-PRE-
+
