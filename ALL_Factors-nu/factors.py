@@ -28,6 +28,14 @@ print("Sum of divisors of", num, "is:", result)
 
 
 
+num1 = 41 
+result = 0
+
+for i in range(1, num1 +1):
+    if num % i ==0:
+        result += i
+        print(i)
+
 # Example 02: Finding Divisors of a Number
 
 num = 230 

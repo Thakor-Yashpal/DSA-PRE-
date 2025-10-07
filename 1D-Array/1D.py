@@ -33,3 +33,61 @@ class another_soluction(object):
 
 sol = another_soluction()
 print(sol.one_more("abc", "pqr"))
+
+
+
+# buble sort
+
+# we have a number of arrays and we want to sort them in ascending order
+arr = [64, 34, 25, 12, 22, 11, 90]
+
+for i in range(len(arr)):
+    for j in range(0, len(arr) - i - 1):
+        if arr[j] > arr [j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+print(arr)
+
+
+
+# linear search of  an element in an array
+
+def linear_search(list0, target):
+    for i in range(len(list0)):
+        if list0[i] == target:
+            return i
+    return -1  # Target not found
+
+list0 = [10, 23, 45, 70, 11, 15]
+target = 70
+
+if linear_search(list0, target) != -1:
+    print("Element found at index:", linear_search(list0, target))
+else:
+    print("Element not found in the list.")
+    
+    
+    
+
+# binary search of an element in an array
+
+def binary_search(binary_list, target):
+    left, right = 0, len(binary_list) - 1
+    
+    while left <= right:
+        mid =  left + (right - left) // 2
+        
+        if binary_list[mid] == target:
+            return mid
+        elif binary_list[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1  # Target not found
+
+binary_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+target = 3
+
+if binary_search(binary_list, target) != -1:
+    print("Binary Element found at index:", binary_search(binary_list, target))
+else:
+    print("Binary Element not found in the list.")
