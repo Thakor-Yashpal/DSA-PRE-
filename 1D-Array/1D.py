@@ -91,3 +91,48 @@ if binary_search(binary_list, target) != -1:
     print("Binary Element found at index:", binary_search(binary_list, target))
 else:
     print("Binary Element not found in the list.")
+    
+
+# Check if age allows entry to the club
+
+# def can_enter_club(age):
+#     if age >= 18:
+#         return "You can enter the club."
+#     else:
+#         return "You cannot enter the club."
+
+# age = int(input("Enter your age: "))
+# print(can_enter_club(age))
+
+
+
+# so how can wr print the * this pattern
+
+def pattern(n):
+    for i in range(n):
+        for j in range(i + 1):
+            print("*", end = "")
+        print() 
+n = 5
+pattern(n)
+
+
+
+#
+
+# but wht is you wan t create like this like pyramid
+
+def pyrmid(n):
+    for i in range(n):
+        for j in range(n - i - 1):
+            print(" ", end = "")
+        for k in range(i + 1):
+            print("*", end = "")
+        
+        print()
+n = 5
+pyrmid(n)
+
+
+
+
