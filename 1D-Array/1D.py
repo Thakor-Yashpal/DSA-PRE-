@@ -134,5 +134,27 @@ n = 5
 pyrmid(n)
 
 
+# time complexity is O(n^2)
+# space complexity is O(1)
+
+n = 100
+
+for i in range(1, n + 1):
+    print(i)
+    
+
+count = 0
+
+while count < n:
+    print(count)
+    count += 1
 
 
+def mY_sum(list):
+    total = 0
+    for i in range(len(list)):
+        total += list[i]
+    return total
+
+my_list= [1,2,3,4,5]
+print(f'This is the starting point {mY_sum(my_list)}')
