@@ -53,4 +53,3 @@ if has_digit:
     print("The string contains one or more digits:",has_digit)
 else:
     print("The string does not contain any digits:",has_digit)
-
