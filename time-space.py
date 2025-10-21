@@ -101,4 +101,8 @@ for char, count in char_count.items():
     if count > 1:
         print(f"Character '{char}' appears {count} times.")
         
-    
+import torch   
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+print(f"Using device: {device}")
