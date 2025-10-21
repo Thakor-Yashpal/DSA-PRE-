@@ -47,4 +47,5 @@ def single_number(nums):
     return result
 
 result = single_number(nums)
+print(result)
 
