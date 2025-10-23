@@ -92,17 +92,6 @@ for i in range(1, L + 1):
 # It then prints characters that appear more than once, showing how many times they appear.
 # Useful for simple text analysis or debugging repeated characters.
 
-s = "abcaadefrqrqeqrqasasaeafaff"
-char_count = {}
-for char in s:
-    char_count[char] = char_count.get(char, 0) + 1
 
-for char, count in char_count.items():
-    if count > 1:
-        print(f"Character '{char}' appears {count} times.")
-        
-import torch   
 
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-print(f"Using device: {device}")
