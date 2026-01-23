@@ -49,3 +49,24 @@ def single_number(nums):
 result = single_number(nums)
 print(result)
 
+
+
+nums = [4,3,2,7,8,2,3,1]
+
+def find_disappeared_numbers(nums):
+    for i in range(len(nums)):
+        index = abs(nums[i]) - 1
+        if nums[index] > 0:
+            nums[index] = -nums[index]
+    result = []
+    for i in range(len(nums)):
+        if nums[i] > 0:
+            result.append(i + 1)
+    return result
+
+
+
+# this is the two sum 
+
+
+Number = [2,7,11,15,12,3,4,6,8,9,21,14]
